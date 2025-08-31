@@ -22,7 +22,7 @@ Features
 10. Simultaneously read and write on 2 wires. 
 * This is actually achieved using 4 gpio pins. 
 *  All 4 gpio pins are intentionally configured as input pins in YAML. This keeps all 4 gpio pins floating at idle, to prevent esp outputs from pulling the wiegand D0 & D1 high or low causing interruptions that block wiegand reads from both the esp and access control system.
-* Esp Wiegand output is controlled via the lambda scripts to allow the output gpio’s to be switched from inputs to outputs on the fly. Overcoming the ESP limitations of gpio’s having to be set static to either inputs or outputs & pulled high or low.
+* Esp Wiegand output is controlled via the lambda funtions to allow the output gpio’s to be switched from inputs to outputs on the fly. Overcoming the ESP limitations of gpio’s having to be set static to either inputs or outputs & pulled high or low.
 11. Ability to preform physical wiegand loop back test. For troubleshooting esp wiegand transmit and receive.
 12. Ability to trigger a replay of the last wiegand read with a “unicorn key”. (e.g. FC0 CD0 *not blank)
 * Using a card or fob with a Facility code 0 and Card number 0 technically meets all the requirements as a functional card. But is not a card a manufacture sells.
