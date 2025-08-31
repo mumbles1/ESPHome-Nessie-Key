@@ -6,20 +6,14 @@ Features
 1. Works with commercially available  wiegand readers & wiegand RF receivers
 2. Works with commercially available  access control systems
 3. Functions with nothing more than ESP8266 chip excluding power
-*  Voltage regulator optional
 * Voltage regulator optional
 * No tri-state buffer required
 * No Optocouplers required
 * No diodes required
 * No  resisters
 * No extra hardware needed to preform wiegand read & write.
-4. Voltage regulator optional
-5. No tri-state buffer required
-6. No Optocouplers required
-7. No diodes required
-8. No  resisters
-9. No extra hardware needed to preform wiegand read & write.  
-10. Simultaneously read and write on 2 wires. 
+
+4. Simultaneously read and write on 2 wires. 
 * This is actually achieved using 4 gpio pins. To overcome an ESPHome limitation that requires gpio’s to be statically set to be an input or an output.
 *  All 4 gpio pins are intentionally configured as input pins in YAML. This keeps all 4 gpio pins floating at idle, to prevent esp outputs from pulling the wiegand D0 & D1 low or high causing interruptions that block wiegand reads from both the esp and access control system.
 * Esp Wiegand output is controlled via the lambda functions to allow the output gpio’s to be switched from inputs to outputs on the fly. Overcoming the ESPHome limitations of gpio’s having to be set static to either inputs or outputs & pulled high or low.
@@ -38,4 +32,7 @@ Features
 15. Web ui to see, analyze, monitor, calculate & display wiegand conversions (e.g Flipper hex, raw hex, full hex, fc/cd, full fc/cd etc.)
 16. Ability to configure wifi via captive portal.
 17. Ability to connect via AP mode
-18. ESPNow integration ??  
+
+Ideas to adding
+1. ESPNow integration
+2. Isolated wiegand input for standalone reader. To use without direct connection to access control system.
