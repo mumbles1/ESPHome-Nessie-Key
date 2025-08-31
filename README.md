@@ -20,7 +20,7 @@ Features
 11. Ability to preform physical wiegand loop back test. For troubleshooting esp wiegand transmit and receive.
 12. Ability to trigger a replay of the last wiegand read with a “unicorn key”. (e.g. FC0 CD0 *not blank)
 * Using a card or fob with a Facility code 0 and Card number 0 technically meets all the requirements as a functional card. But is not a card a manufacture sells.
-* Commercially available card readers will pass FC0:CD0 card reads through wiegand D0/D1. But access control systems ignore a FC0:CD0 card read. Because all the access control system sees is the start bit and end bit without a card number. It doesn’t even show up in logs.
+* Commercially available card readers will pass FC0:CD0 card reads through wiegand D0/D1. But access control systems ignore a FC0:CD0 card read. Because all the access control system sees is the start bit and end bit without a card number. It doesn’t even show up in logs. But keep in mind it does trigger the LED on reader.
 * The esp does read FC0:CD0 cards to trigger one of three option preselected in the web ui.
             1) Replay last card read
             2) Play manually entered 
