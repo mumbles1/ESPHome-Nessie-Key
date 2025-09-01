@@ -1,5 +1,7 @@
 # ESPHome-Nessie-Key
 
+
+<img width="1024" height="1024" alt="Mystical Lock and Creatures Emblem" src="https://github.com/user-attachments/assets/122e432a-39fd-4fd0-a7b3-29fc5fc3a5cd" />
 Goals of this project is to creat an ESPHome wiegand interpreter with minimal hardware. (e.g ESP8266 chip and optional voltage regulator) 
 
 Features 
@@ -36,3 +38,4 @@ Features
 Ideas to adding
 1. ESPNow integration
 2. Isolated wiegand input for standalone reader. To use without direct connection to access control system.
+
