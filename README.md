@@ -2,7 +2,7 @@
 
 
 <img width="1024" height="1024" alt="Mystical Lock and Creatures Emblem" src="https://github.com/user-attachments/assets/122e432a-39fd-4fd0-a7b3-29fc5fc3a5cd" />
-Goals of this project is to creat an ESPHome wiegand interpreter with minimal hardware. (e.g ESP32 chip and optional voltage regulator) 
+Goals of this project is to creat an ESPHome wiegand interpreter with minimal hardware. (e.g M5 NanoC6 and optional voltage regulator) 
 
 Features 
 1. Works with commercially available  wiegand readers & wiegand RF receivers
