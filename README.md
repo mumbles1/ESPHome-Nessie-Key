@@ -6,7 +6,7 @@ Goals of this project is to creat an ESPHome wiegand interpreter with minimal ha
 
 Features 
 1. Works with commercially available  wiegand readers & wiegand RF receivers
-2. Works with commercially available  access control systems
+2. Works with commercially available  access control systems (e.g tested on Doorking, Linear Access, 3x Logic Infinias, Uhppote, HID Asto series, Mercury LP seriese)
 3. Functions with nothing more than M5 NanoC6 excluding power
 * Voltage regulator optional
 * No tri-state buffer required
