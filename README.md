@@ -2,12 +2,12 @@
 
 
 <img width="1024" height="1024" alt="Mystical Lock and Creatures Emblem" src="https://github.com/user-attachments/assets/122e432a-39fd-4fd0-a7b3-29fc5fc3a5cd" />
-Goals of this project is to creat an ESPHome wiegand interpreter with minimal hardware. (e.g ESP8266 chip and optional voltage regulator) 
+Goals of this project is to creat an ESPHome wiegand interpreter with minimal hardware. (e.g ESP32 chip and optional voltage regulator) 
 
 Features 
 1. Works with commercially available  wiegand readers & wiegand RF receivers
 2. Works with commercially available  access control systems
-3. Functions with nothing more than ESP8266 chip excluding power
+3. Functions with nothing more than M5 NanoC6 excluding power
 * Voltage regulator optional
 * No tri-state buffer required
 * No Optocouplers required
@@ -16,8 +16,6 @@ Features
 * No extra hardware needed to preform wiegand read & write.
 
 4. Simultaneously read and write on 2 wires. 
-* This is actually achieved using 4 gpio pins. To overcome an ESPHome limitation that requires gpio’s to be statically set to be an input or an output.
-*  All 4 gpio pins are intentionally configured as input pins in YAML. This keeps all 4 gpio pins floating at idle, to prevent esp outputs from pulling the wiegand D0 & D1 low or high causing interruptions that block wiegand reads from both the esp and access control system.
 * Esp Wiegand output is controlled via the lambda functions to allow the output gpio’s to be switched from inputs to outputs on the fly. Overcoming the ESPHome limitations of gpio’s having to be set static to either inputs or outputs & pulled high or low.
 11. Ability to preform physical wiegand loop back test. For troubleshooting esp wiegand transmit and receive.
 12. Ability to trigger a replay of the last wiegand read with a “unicorn key”. (e.g. FC0 CD0 *not blank)
