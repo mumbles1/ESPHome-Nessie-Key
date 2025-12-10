@@ -36,7 +36,7 @@ Features
 Ideas to adding
 1. ESPNow integration
 2. Isolated wiegand input for standalone reader. To use without direct connection to access control system.
-3. De Bruijn based Wiegand test frames using Lyndon Words?
+3. De Bruijn (N=2, K=2 (base)) based on Wiegand test frames. Maybe using Lyndon Words and/or de Bruijn graph?
             3a. Pick a window size (e.g., 16 bits, or the full payload length)
             3b. Generate a De Bruijn sequence over alphabet {0,1}
             3c. Slide a fixed-size window across the sequence
