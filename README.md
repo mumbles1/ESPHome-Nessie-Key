@@ -6,7 +6,7 @@ Goals of this project is to creat an ESPHome wiegand interpreter with minimal ha
 
 Features 
 1. Works with commercially available  wiegand readers & wiegand RF receivers
-2. Works with commercially available  access control systems (e.g tested on Doorking, Linear Access, 3x Logic Infinias Intelli-M , Uhppote, HID Asto series, Mercury LP seriese)
+2. Works with commercially available  access control systems (e.g tested on Doorking 1835 & 1838, Liftmaster EL25 & EL2000 & KPR2000, Linear Access AM3 Plus, 3x Logic Infinias Intelli-M , Uhppote, HID Asto series, Mercury LP seriese)
 3. Functions with nothing more than M5 NanoC6 excluding power
 * Voltage regulator optional
 * No tri-state buffer required
@@ -32,6 +32,7 @@ Features
 15. Web ui to see, analyze, monitor, calculate & display wiegand conversions (e.g Flipper hex, raw hex, full hex, fc/cd, full fc/cd etc.)
 16. Ability to configure wifi via captive portal.
 17. Ability to connect via AP mode
+18. 
 
 Ideas to adding
 1. ESPNow integration
