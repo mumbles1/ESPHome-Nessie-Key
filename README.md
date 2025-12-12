@@ -32,7 +32,10 @@ Features
 15. Web ui to see, analyze, monitor, calculate & display wiegand conversions (e.g Flipper hex, raw hex, full hex, fc/cd, full fc/cd etc.)
 16. Ability to configure wifi via captive portal.
 17. Ability to connect via AP mode
-18. 
+18. Abilility to Scan wiegand
+              1) Wiegand Keypad codes
+              2) Can set a starting facility code
+              3) Can set a starting Card number
 
 Ideas to adding
 1. ESPNow integration
@@ -47,4 +50,5 @@ Ideas to adding
 4. exhaustive bit‑pattern stress testing using De Bruijn based pulses with wiegand bit timing (4,8,16,26,27,28,29,31,32,33,34,35,36,37,39,40,48,50,56,64,126 & reverse)
             4a. Isolate all overlaping patterns in 26–29, 31–37 that are duplicated inside 4, 8, 16, 48, 50, 56, 64, 126
             Note:  4, 8, 16, 48, 50, 56, 64, 126 by default have minimal or no overlaping pulses
-6. RFID output 
+6. RFID output
+7. Add Physical keypad interceptor & replay
